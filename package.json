@@ -2,13 +2,16 @@
   "name": "headless",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://haakseth.github.io/headless",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6005",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "predeploy": "yarn build-storybook",
+    "deploy": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.1",
@@ -29,6 +32,7 @@
     "@storybook/testing-library": "^0.0.11",
     "babel-loader": "^8.2.5",
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "gh-pages": "^3.2.3"
   }
 }
