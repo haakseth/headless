@@ -1,0 +1,55 @@
+/*
+ *
+ * Septima Bricks - Bundlefile
+ *
+ */
+
+/* ------- Mixins ------- */
+@import "@septima/bricks-react/dist/sass/mixins/_functions.scss";
+@import "@septima/bricks-react/dist/sass/mixins/_text-color-from-color.scss";
+@import "@septima/bricks-react/dist/sass/mixins/_shade-tint-color.scss";
+
+/* ------- Global ------- */
+@import "@septima/bricks-react/dist/sass/_normalize.scss";
+@import "@septima/bricks-react/dist/sass/_clearfix.scss";
+@import "./_variables.scss";
+@import "@septima/bricks-react/dist/sass/_root.scss";
+@import "@septima/bricks-react/dist/sass/_global.scss";
+@import "@septima/bricks-react/dist/sass/_typography.scss";
+
+/* ------- Global ------- */
+@import "@septima/bricks-react/dist/sass/_design-snippets.scss";
+
+/* ------- Grid ------- */
+@import "@septima/bricks-react/dist/sass/grid/_breakpoints.scss";
+@import "@septima/bricks-react/dist/sass/grid/_container-mixins.scss";
+@import "@septima/bricks-react/dist/sass/grid/_containers.scss";
+@import "@septima/bricks-react/dist/sass/grid/_grid-mixins.scss";
+@import "@septima/bricks-react/dist/sass/grid/_grid.scss";
+
+/* ------- Grid ------- */
+@import "./bricks/_utilities-map.scss";
+@import "@septima/bricks-react/dist/sass/utilities/_utilities.scss";
+
+/* ------- Components ------- */
+@import "@septima/bricks-react/dist/sass/components/Alert.scss";
+@import "@septima/bricks-react/dist/sass/components/Avatar.scss";
+@import "@septima/bricks-react/dist/sass/components/Badge.scss";
+@import "@septima/bricks-react/dist/sass/components/Button.scss";
+@import "@septima/bricks-react/dist/sass/components/Breadcrumb.scss";
+@import "@septima/bricks-react/dist/sass/components/Card.scss";
+@import "@septima/bricks-react/dist/sass/components/Codeview.scss";
+@import "@septima/bricks-react/dist/sass/components/Divider.scss";
+@import "@septima/bricks-react/dist/sass/components/Subheader.scss";
+@import "@septima/bricks-react/dist/sass/components/Dropdown.scss";
+@import "@septima/bricks-react/dist/sass/components/List.scss";
+@import "@septima/bricks-react/dist/sass/components/Navbar.scss";
+@import "@septima/bricks-react/dist/sass/components/Popover.scss";
+@import "@septima/bricks-react/dist/sass/components/Table.scss";
+@import "@septima/bricks-react/dist/sass/components/Modal.scss";
+
+/* ***** Custom styling ***** */
+@import "./bricks/_utilities.scss";
+@import "./_typography.scss";
+@import "./_global.scss";
+@import "./layouts/_l-front.scss";

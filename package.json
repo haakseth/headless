@@ -16,6 +16,7 @@
   "dependencies": {
     "@headlessui/react": "^1.6.1",
     "@radix-ui/react-dialog": "^0.1.7",
+    "@septima/bricks-react": "^0.1.11",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-aria": "^3.15.0",
@@ -33,6 +34,8 @@
     "babel-loader": "^8.2.5",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.6",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "sass": "^1.51.0",
+    "storybook-addon-sass-postcss": "^0.1.1"
   }
 }

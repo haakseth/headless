@@ -1,0 +1,145 @@
+@use "sass:math";
+/*
+ *
+ * Septima Bricks - Variabler
+ *
+ */
+
+/* ------- Color ------- */
+$primary: #9D004F; //Onedoor
+$secondary: rgb(110, 132, 163);
+$success: rgb(29, 192, 136);
+$danger: rgb(230, 55, 87);
+$warning: rgb(246, 195, 67);
+$info: rgb(57, 175, 209);
+$light: #F6F8FA;
+$dark: #022A3F;
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+
+$brick-colors: ("primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+  "light": $light,
+  "dark": $dark,
+  "black": $black,
+  "white": $white,
+);
+
+$text-muted: tint-color($dark, 50%);
+
+/* ------- Setup Options ------- */
+//Grid
+$enable-grid: true; //css grid .col, .row, .col-3 mfl.
+
+//Colors
+$enable-tintcolors: true; //lys farveprofil af $brick-colors
+$enable-shadecolors: true; //mørk farveprofil af $brick-colors
+
+//Utilities
+$enable-utiltities: true; //Aktivere alle utiltie classes
+$enable-important-utilities: true; //Tilføjer !important class til alle utilities
+
+/* ------- Utility ------- */
+
+// *** Border-radius ***
+$border-radius: 0.25em;
+
+// *** Borders ***
+$border-color: $light;
+$border-width: 1px;
+$border-widths: (1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+);
+
+// *** Spacers ***
+$spacer: 1rem;
+
+// *** Shadow ***
+$shadow-sm: 0 0.5rem 0.25rem rgba(0, 0, 0, 0.05);
+$shadow: 0 0.35rem 0.5rem rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.5);
+
+// *** Margin / Padding ***
+$margin-base: 2rem;
+$margin: ("1": math.div($margin-base, 2),
+  "2": math.div($margin-base, 1),
+  "3": $margin-base,
+  "4": #{$margin-base * 1},
+  "5": #{$margin-base * 2},
+);
+
+/* ------- Global ------- */
+$prefix: "sb";
+$variable-prefix: $prefix;
+
+//Color tint
+$tint-base-amount: 75%; //Mængden tint colors får tint
+
+// Spacers
+$spacers: 1rem;
+$spacers: (0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$negative-spacers: negativify-map($spacers);
+
+/* ------- Typography ------- */
+$font-size-root: 15px; //null !default - påvirker rem values
+$font-size-base: 1rem; // påvirker kun font-sizes
+
+// $h1-font-size: $font-size-base * 2.5;
+// $h2-font-size: $font-size-base * 2;
+// $h3-font-size: $font-size-base * 1.75;
+// $h4-font-size: $font-size-base * 1.5;
+// $h5-font-size: $font-size-base * 1.25;
+// $h6-font-size: $font-size-base;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.3;
+$h4-font-size: $font-size-base * 1.15;
+$h5-font-size: $font-size-base;
+$h6-font-size: $font-size-base;
+
+/* ------- Grid ------- */
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 6;
+
+$gutters: $spacers;
+
+// Definer dine min. width for dit grid
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// Definer max. width '.container' for forskellige skærmstørrelser
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+
+$container-padding-x: $grid-gutter-width * 0.5;
+
+/* ------- Components ------- */
+
+// *** Avatar ***
+$avatar-border-radius: $border-radius;
+$avatar-height-width: 2.5em;

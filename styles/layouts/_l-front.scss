@@ -1,0 +1,9 @@
+.l-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $dark;
+    color: $white;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,9 @@
+$font-standard: proxima-nova,
+Helvetica Neue,
+sans-serif;
+
+body,
+html {
+    font-family: $font-standard;
+    -webkit-font-smoothing: antialiased;
+}
